@@ -85,3 +85,42 @@ data_review = pd.read_csv("wine_review.csv")
 
 # data_review['index_backwards'] = range(len(data_review), 0, -1)   # Or with an iterable of values
 # print(data_review['index_backwards'])
+
+
+# Summary Functions
+
+# print(data_review.poits.describe())     # Here the output changes given the data type of the input
+#                                       (the output here only makes sense for numerical data)
+
+# print(data_review.taster_name.describe())
+
+# print(data_review.points.mean())        #To see the mean of the points allotted
+
+# print(data_review.taster_name.unique())     # To see a list of unique values
+
+# print(data_review.taster_name.value_counts())  # To see a list of unique values and how
+#                                                  often they occur in the dataset
+
+
+# Maps
+
+# Remeaning the scores the wines received to 0
+
+# review_points_mean = data_review.points.mean()
+# print(data_review.points.map(lambda p: p - review_points_mean))
+
+
+# def remean_points(row):
+#     row.points = row.points - review_points_mean
+#     return row
+
+
+# print(data_review.apply(remean_points, axis='columns'))
+
+# print(data_review.head(1))    # Showing that the data in the file didn't change
+
+# review_points_mean = data_review.points.mean()
+
+# print(data_review.points - review_points_mean)
+
+# print(data_review.country + " - " + data_review.region_1)
