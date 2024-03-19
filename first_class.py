@@ -119,8 +119,8 @@ data_review = pd.read_csv("wine_review.csv")
 
 # print(data_review.head(1))    # Showing that the data in the file didn't change
 
+# Here is a faster way for remeaning our points column
 # review_points_mean = data_review.points.mean()
-
 # print(data_review.points - review_points_mean)
 
-# print(data_review.country + " - " + data_review.region_1)
+# print(data_review.country + " - " + data_review.region_1)     # Combining coutry and region information in the DT
