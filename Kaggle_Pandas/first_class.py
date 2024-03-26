@@ -28,7 +28,7 @@ import pandas as pd
 
 # Native accessors
 
-data_review = pd.read_csv("wine_review.csv")
+data_review = pd.read_csv("../wine_review.csv")
 
 # print(data_review.country)   Here we can specify the name of the column we
 #                             want to display
@@ -37,7 +37,7 @@ data_review = pd.read_csv("wine_review.csv")
 # print(data_review['country'][0])    To get a single specific file we just need index it
 
 
-# Indexing in Pandas
+# Indexing in Cursos de Pandas
 
 # print(data_review.iloc[0])     Here we are selecting the first row of data in DT
 
