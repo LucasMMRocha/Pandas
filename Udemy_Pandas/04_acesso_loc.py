@@ -38,5 +38,3 @@ for i in serie_idade.items():
         lista_idade.append(i[0])  # Aqui ele retorna os indices de cada pessoa
 
 print(lista_idade)
-
-
