@@ -32,4 +32,3 @@ print(serie_idade_nome2.size)
 print(serie_idade_nome2)
 
 print(serie_idade_nome2.loc['Andrea Henderson':'Kimberly Nelson'])
-
